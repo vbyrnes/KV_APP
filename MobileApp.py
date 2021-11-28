@@ -5,9 +5,11 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 from kivy.uix.widget import Widget
+from kivy.properties import ObjectProperty
 
 class MyGrid(Widget):
-    pass
+    name=ObjectProperty(None)
+    email=ObjectProperty(None)
 
 class MyApp(App):
     def build(self):
